@@ -1,0 +1,55 @@
+.carousel {
+    padding: 81px 0;
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 750px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+            display: flex;
+        }
+    }
+    .slick-prev, .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -66px;
+        border: none;
+        background-color: #fff;
+        img {
+            width: 30px;
+            height: 50px;
+        }
+    }
+    .slick-next {
+        right: -66px;
+        left: auto;
+    }
+    
+}
+
+
+/* Медіа-запит для мобільних пристроїв (максимальна ширина 768px) */
+@media (max-width: 768px) {
+    .carousel__inner {
+        width: 100%; /* Зробіть внутрішній контейнер на всю ширину екрану */
+        margin: 0; /* Скасуйте зовнішні відступи на мобільних пристроях */
+    }
+
+    .slick-prev, .slick-next {
+        left: 0;
+        right: 0; 
+        transform: translateY(0);
+        img {
+            width: 20px; /* Зменште розмір зображень для мобільних пристроїв */
+            height: 30px; /* Зменште розмір зображень для мобільних пристроїв */
+        }
+    }
+    .slick-next {
+        left: auto; /* Змініть положення кнопки "next" на мобільних пристроях */
+        right: 0; /* Позиціонування кнопки "next" від правого краю */
+    }
+}
