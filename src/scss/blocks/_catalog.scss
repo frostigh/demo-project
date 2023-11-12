@@ -114,7 +114,7 @@
     &__content {
         width: 50%;
         margin-right: 0px;
-        transform: translateX(-101%);
+        transform: translateX(-106%);
         transition: 0.5s all;
         &_active {
             transform: translateX(0%);
@@ -169,5 +169,29 @@
         }
     }
     
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .catalog__tabs {
+        margin-top: 20px; 
+        flex-wrap: wrap; 
+    }
+
+    .catalog__tab {
+        width: 100%;
+        margin: 5px 0; 
+    }
+
+    .catalog__tab_active {
+        width: 100%; 
+    }
+
+    .catalog__content {
+        margin-top: 20px;
+    }
+
+    .catalog-item {
+        width: 100%; 
     }
 }

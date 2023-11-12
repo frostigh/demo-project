@@ -1,4 +1,5 @@
 .reviews {
+    width: auto;
     padding-bottom: 70px;
     &__review{
         margin-top: 70px;
@@ -42,4 +43,32 @@
     &__span {
         margin-top: 8px;
         }
+}
+
+@media screen and (max-width: 767px) {
+    .reviews__review {
+        flex-direction: column; /* Зміна напрямку для мобільних */
+        margin-top: 20px; /* Зменшення відступу для мобільних */
+    }
+
+    .reviews__text {
+        text-align: center; /* Центрування тексту для мобільних */
+    }
+
+    .reviews__desc {
+        width: 100%; /* Розширення опису на весь екран для мобільних */
+    }
+
+    .reviews__title,
+    .reviews__subtitle {
+        text-align: center; /* Центрування заголовків для мобільних */
+    }
+
+    .reviews__span {
+        margin-top: 8px; /* Збільшення відступу для мобільних */
+    }
+
+    .reviews__review img {
+        margin: 15px auto 20px; /* Центрування та зміна маржі для мобільних */
+    }
 }

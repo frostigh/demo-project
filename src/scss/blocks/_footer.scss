@@ -44,3 +44,27 @@
         align-items:center;
     }
 }
+
+@media (max-width: 767px) {
+    .footer__info {
+        position: absolute; 
+        width: 100%; 
+        background-color: $main-color; 
+        height: auto; 
+        padding: 20px; 
+        text-align: center; 
+    }
+
+    .footer__addr,
+    .footer__phone {
+        margin-bottom: 20px; 
+    }
+
+    .footer__social-item {
+        margin: 0 10px; 
+    }
+
+    .footer__social {
+        flex-wrap: wrap;
+    }
+}
