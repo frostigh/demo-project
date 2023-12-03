@@ -46,4 +46,22 @@ $(document).ready(function(){
             $('#order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
             $('.overlay, #order').fadeIn();
         })
+
+        function validateForms(form) {
+            $(form).validate({
+                rules: {
+                    name: "required",
+                    phone: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                }
+            });
+        }
+    
+        
+        validateForms('#consultation form');
+        validateForms('#order form');
+        validateForms('.consultation form');
     });

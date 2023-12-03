@@ -11,9 +11,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-20%);
+    transform: translate(-50%,-50%);
     width: 380px;
-    height: 400px;
+    height: auto;
     background-color: #f2f2f2;
     &__close{
         top: 0;
@@ -38,6 +38,13 @@
     }
     &_mini {
         height: 140px;
+    }
+    .error{
+        border:1px solid red;
+    }
+    label.error {
+     border:none;
+     text-align: center;
     }
 }
 
